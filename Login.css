@@ -1,0 +1,173 @@
+
+.whole
+{
+    min-height: 100vh;
+    background: url('./images/bg4.jpg') no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper
+{
+    position: relative;
+    width: 450px;
+    height:590px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    background:transparent;
+    backdrop-filter: blur(30px);
+    border: 1px solid white;
+    border-radius: 10px;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 20px;
+}
+.first h2{
+    color: white;
+}
+.first
+{
+    width: 420px;
+    padding-right:30px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.second
+{
+    width: 420px;
+    position: absolute;
+    translate: 600px;
+    padding-right:30px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.wrapper.active .first
+{
+    transition: none;
+    translate: -500px;
+}
+.wrapper .first{
+    transition: translate .18s ease;
+    translate: 0;
+}
+.wrapper.active .second{
+    transition: translate .18s ease;
+    translate: 0;
+}
+.first h1{
+    font-size: 36px;
+    color: white;
+}
+.input
+{
+    position: relative;
+    padding-left: 8px;
+    width: 95%;
+    height: 50px;
+    margin: 10px 0;
+    color: white;
+}
+.second .input
+{
+    padding-left: 20px;
+    position: relative;
+    width: 90%;
+    height: 50px;
+    margin: 10px 0;
+    color: white;
+}
+.input input
+{
+    height:80%;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline:none;
+    border:2px solid white;
+    border-radius: 40px;
+    font-size: 15px;
+    padding-left: 20px;
+    color: white;
+}
+.input input::placeholder
+{
+    color: black;
+    font-size: 15px;
+    color: white;
+}
+.input .icon
+{
+    position: absolute;
+    color: white;
+    right: -10px;
+    top: 30%; 
+    transform: translate(-50%);
+}
+.first .rem
+{
+    color: white;
+    padding-left: 20px;
+}
+.first button{
+    height: 40px;
+    width: 100px;
+    border: none;
+    box-shadow: 0 0 10px rgb(61, 161, 161);
+    cursor: pointer;
+    font-size: 15px;
+}
+.first button:hover{
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+}
+.reg{
+    color: white;
+}
+.reg a{
+    text-decoration: none;
+    color: white;
+}
+.reg a:hover{
+    text-decoration: underline;
+    color: aqua;
+}
+.second button{
+    height: 40px;
+    width: 100px;
+    border: none;
+    box-shadow: 0 0 10px rgb(61, 161, 161);
+    cursor: pointer;
+    font-size: 15px;
+}
+.second button:hover{
+    background-color: aquamarine;
+    color: black;
+    font-weight: bold;
+}
+.second .log a{
+    text-decoration: none;
+    color: white;
+}
+.second .log a:hover{
+    text-decoration: underline;
+    color: aqua;
+}
+.second h1,h2{
+    color: white;
+}
+.log1
+{
+    padding-left: 25px;
+    color: white;
+}
+.log
+{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin: 10px 0 15px;
+    color: white;
+}
